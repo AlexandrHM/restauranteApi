@@ -40,16 +40,13 @@ de las mismas</p>
 
 - Cada cliente puede escribir múltiples reseñas, pero cada reseña pertenece a un solo cliente.
 - Cada platillo puede tener múltiples reseñas, pero cada reseña pertenece a un solo platillo
-![DB_Restaurante](https://github.com/AlexandrHM/apiRestaurant/assets/44487342/062aebeb-12fc-4fa4-a8c5-88ec4e41017b)
+![DB_Restaurante](https://github.com/AlexandrHM/restauranteApi/assets/44487342/7c50bc3b-74f4-4212-a92f-8459567af9e6)
 
 <p>Esquema de las tablas</p>
 
-![image](https://github.com/AlexandrHM/apiRestaurant/assets/44487342/9d0df62f-d382-4687-ab38-5499ac51e43a)
-
-![image](https://github.com/AlexandrHM/apiRestaurant/assets/44487342/23536b3f-25c3-40c1-9982-f87283266183)
-
-![image](https://github.com/AlexandrHM/apiRestaurant/assets/44487342/277b6364-4b08-46d5-874b-36f0c012bb46)
-
+![image](https://github.com/AlexandrHM/restauranteApi/assets/44487342/d6bcb7e0-ce13-4683-9c67-21938e7fb180)
+![image](https://github.com/AlexandrHM/restauranteApi/assets/44487342/f540d7ec-db8c-44a4-82d9-1ebfdcf9887c)
+![image](https://github.com/AlexandrHM/restauranteApi/assets/44487342/a6da2e30-53a3-4e53-900d-6817fb2256ca)
 
 `$ CREATE DATABASE restaurante; `
 
@@ -96,6 +93,49 @@ CREATE TABLE Resenas (
 
 ```
 <p>Una vez finalizada la configuracion puede ejecutar el archivo "Application.java" </p>
+
+#### Pruebas
+<p>Para hacer pruebas con Postman necesitaras llenar la base de datos por lo tanto dejaré a disposición
+estas operaciones de inserccion para mayor facilidad</p>
+
+```bash
+INSERT INTO Platillos (nombre, descripcion, precio, categoria)
+VALUES ('Tacos al Pastor', 'Tacos tradicionales', 150, 'FU');
+
+INSERT INTO Platillos (nombre, descripcion, precio, categoria)
+VALUES ('Guacamole', 'Aguacate con totopos', 80, 'AP');
+
+INSERT INTO Platillos (nombre, descripcion, precio, categoria)
+VALUES ('Churros', 'Dulce fritura', 50, 'PO');
+
+INSERT INTO Platillos (nombre, descripcion, precio, categoria)
+VALUES ('Margarita', 'Cóctel clásico', 100, 'BE');
+
+INSERT INTO Platillos (nombre, descripcion, precio, categoria)
+VALUES ('Ensalada César', 'Ensalada con pollo', 120, 'AP');
+
+INSERT INTO Platillos (nombre, descripcion, precio, categoria)
+VALUES ('Bistec a la Parrilla', 'Carne de res a la parrilla', 200, 'FU');
+
+INSERT INTO Platillos (nombre, descripcion, precio, categoria)
+VALUES ('Flan', 'Postre de caramelo', 70, 'PO');
+
+INSERT INTO Platillos (nombre, descripcion, precio, categoria)
+VALUES ('Limonada', 'Bebida refrescante', 50, 'BE');
+
+INSERT INTO Platillos (nombre, descripcion, precio, categoria)
+VALUES ('Camarones al Ajillo', 'Mariscos con ajo', 180, 'FU');
+
+INSERT INTO Platillos (nombre, descripcion, precio, categoria)
+VALUES ('Nachos', 'Totopos con queso', 90, 'AP');
+
+INSERT INTO Platillos (nombre, descripcion, precio, categoria)
+VALUES ('Brownie', 'Pastel de chocolate', 60, 'PO');
+
+INSERT INTO Platillos (nombre, descripcion, precio, categoria)
+VALUES ('Mojito', 'Cóctel de menta', 120, 'BE');
+
+```
 
 > [!NOTE]
 > Apartado del Front-End (Página Web)
